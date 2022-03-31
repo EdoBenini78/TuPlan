@@ -14,9 +14,9 @@ namespace TuPlan.DTOs
         public decimal Precio { get; set; }
         public TipoInmueble Tipo { get; set; }
         public bool Destacado { get; set; }
-        public string Duenio { get; set; }
+        public string Propietario { get; set; }
         public int Telefono { get; set; }
-        public string MailDuenio { get; set; }
+        public string MailPropietario { get; set; }
 
         public DTOInmueble(Inmueble inmueble)
         {
@@ -26,9 +26,9 @@ namespace TuPlan.DTOs
             Precio = inmueble.Precio;
             Tipo = inmueble.Tipo;
             Destacado =inmueble .Destacado;
-            Duenio = inmueble.Duenio;
+            Propietario = inmueble.Propietario;
             Telefono = inmueble.Telefono;
-            MailDuenio = inmueble.MailDuenio;
+            MailPropietario = inmueble.MailPropietario;
         }
     }
 }
