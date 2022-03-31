@@ -15,9 +15,9 @@ namespace TuPlan.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "test inmueble";
 
-            return View();
+            return RedirectToAction("Index", "Inmuebles", null);
         }
 
         public ActionResult Contact()
