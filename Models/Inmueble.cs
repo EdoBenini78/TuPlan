@@ -15,6 +15,10 @@ namespace TuPlan.Models
         public decimal Precio { get; set; }
         public TipoInmueble Tipo { get; set; }
         public bool Destacado { get; set; }
+        public bool Mascota { get; set; }
+        public bool Amueblado { get; set; }
+        public int Dormitorios { get; set; }
+        public string Garantia { get; set; }
         public string Propietario { get; set; }
         public int Telefono { get; set; }
         public string MailPropietario { get; set; }
