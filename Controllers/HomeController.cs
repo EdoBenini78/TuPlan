@@ -17,7 +17,7 @@ namespace TuPlan.Controllers
         {
             ViewBag.Message = "test inmueble";
 
-            return RedirectToAction("Index", "Inmuebles", null);
+            return RedirectToAction("Index", "Usuarios", null);
         }
 
         public ActionResult Contact()
