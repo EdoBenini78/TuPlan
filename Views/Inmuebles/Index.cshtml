@@ -1,0 +1,105 @@
+﻿@model IEnumerable<TuPlan.Models.Inmueble>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+
+<p>
+    @Html.ActionLink("Agregar Inmueble", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destacado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mascota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amueblado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dormitorios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Garantia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Propietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MailPropietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Esquina)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destacado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mascota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amueblado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dormitorios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Garantia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Propietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MailPropietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Esquina)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
