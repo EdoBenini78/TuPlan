@@ -22,12 +22,13 @@ namespace TuPlan.Models
         public string Propietario { get; set; }
         public int Telefono { get; set; }
         public string MailPropietario { get; set; }
+        public string Esquina { get; set; }
 
         public Inmueble()
         {
         }
 
-        public Inmueble(int id, string direccion, string descripcion, decimal precio, TipoInmueble tipo, bool destacado, string propietario, int telefono, string mailPropietario)
+        public Inmueble(int id, string direccion, string descripcion, decimal precio, TipoInmueble tipo, bool destacado, string propietario, int telefono, string mailPropietario, string esquina)
         {
             Id = id;
             Direccion = direccion;
@@ -38,6 +39,7 @@ namespace TuPlan.Models
             Propietario = propietario;
             Telefono = telefono;
             MailPropietario = mailPropietario;
+            Esquina = esquina;
         }
     }
 }
